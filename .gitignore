@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# API Keys and Environment Variables
+api_keys.env
+.env
+*.env
+secrets.txt
+
+# Generated files
+*.csv
+detected_hood.png
+hood_extraction_*.png
+
+# Temporary API files
+temp_*.jpg
+temp_*.png
+temp_*.jpeg
+temp_*.bmp
+temp_*.tiff
+
+# Note: Reference images in images/ folder are tracked as core project files
+
+# Edge case analysis outputs
+edge_case_analysis_*.csv
+edge_case_analysis_*.json
+
+# Model files and embeddings
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# Note: ref_embeddings.npy and ref_labels.npy are tracked as core project files
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

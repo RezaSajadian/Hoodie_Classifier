@@ -1,0 +1,26 @@
+# Hoodie Classifier Configuration
+
+# Model Provider: local, openai, or huggingface-api
+model_provider: "local"
+
+# Model Configuration
+model_name: "ViT-B-32"  # Default local model (more CPU-friendly than ViT-B-16)
+openai_model: "text-embedding-ada-002"  # OpenAI embedding model
+hf_model: "sentence-transformers/all-MiniLM-L6-v2"  # HF embedding model
+
+# API Configuration
+openai_api_key: ""  # Set via environment variable OPENAI_API_KEY
+hf_api_token: ""    # Set via environment variable HF_API_TOKEN
+
+# Classification Parameters
+temperature: 0.07  # Temperature scaling for CLIP scores
+exponent: 1.5      # Embedding sharpening exponent
+margin_threshold: 0.04  # Threshold for fallback to reference embeddings (adjusted to catch ambiguous images)
+
+# Reference Embeddings
+ref_embeddings_path: "ref_embeddings.npy"
+ref_labels_path: "ref_labels.npy"
+
+# Image Processing
+image_size: 224
+normalize: true
