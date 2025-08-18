@@ -28,7 +28,6 @@ api_keys.env
 secrets.txt
 
 # Generated files
-*.csv
 detected_hood.png
 hood_extraction_*.png
 
