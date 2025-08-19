@@ -172,11 +172,6 @@ export HF_API_TOKEN="hf-your-token-here"
 
 ### Common Issues
 
-**Import Error: No module named 'skimage'**
-```bash
-pip install scikit-image
-```
-
 **Model Loading Failed**
 - Check `config.yaml` settings
 - Ensure reference embeddings exist
